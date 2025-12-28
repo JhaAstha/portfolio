@@ -24,6 +24,5 @@ This portfolio website is designed to present:
  Tech Stack
 - Frontend: HTML, CSS, JavaScript  
 - Styling: CSS 
-- **Deployment:** GitHub Pages / Netlify (if applicable)
+- Deployment: GitHub Pages
 
-## 📂 Project Structure
