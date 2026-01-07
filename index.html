@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Astha Jha Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <h1 class="logo">ASTHA JHA</h1>
+    <nav>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#about">About Me</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Banner -->
+  <section class="banner" id="banner">
+    <div class="banner-content">
+      <h2>Hi, I’m Astha!</h2>
+      <p>Frontend Developer | HTML | CSS | JavaScript | React</p>
+      <button onclick="document.getElementById('projects').scrollIntoView({behavior:'smooth'})">View Projects</button>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="skills" id="skills">
+    <h3>My Skills</h3>
+    <div class="skills-container">
+      <div class="skill">HTML</div>
+      <div class="skill">CSS</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">React</div>
+      <div class="skill">Git & GitHub</div>
+      <div class="skill">Responsive Design</div>
+      <div class="skill">UI/UX</div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="projects" id="projects">
+    <h3>My Projects</h3>
+    <div class="projects-container" id="projectsContainer"></div>
+  </section>
+
+  <!-- Modal for project details -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span id="closeModal">&times;</span>
+      <h3 id="modalTitle"></h3>
+      <p id="modalDesc"></p>
+      <a id="modalLink" href="#" target="_blank"><button>View Project</button></a>
+    </div>
+  </div>
+
+  <!-- About Me -->
+  <section class="about" id="about">
+    <h3>About Me</h3>
+    <p>I am a BTech CSE student passionate about frontend development and building interactive web applications. I love creating modern, dark-themed UIs inspired by Netflix and other apps.</p>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <h3>Contact Me</h3>
+    <p>Email: asthajha520@gmail.com</p>
+    <p>LinkedIn:https://www.linkedin.com/in/astha-jha-110672363?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app </p>
+    <p>GitHub: https://github.com/JhaAstha</p>
+  </section>
+
+  <footer>
+    <p>© 2026 Astha Jha • Portfolio Website</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
