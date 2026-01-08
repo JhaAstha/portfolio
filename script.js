@@ -1,65 +1,61 @@
-// Projects data
-const projects = [
-  { 
-    title: "Portfolio Website", 
-     
-    desc: "A responsive personal portfolio built using HTML, CSS, and JS. Includes interactive sections and Netflix-style UI.",
-    link: "https://github.com/astha/portfolio"
-  },
-  { 
-    title: "tic tac toe", 
-     
-    desc: "A tic toe interactive game with beautiful color pop ups using language C",
-    
-  },
-  { 
-    title: "Calculator", 
-    desc: "A calculator with scientific functions and expressive colors.",
-    link: "https://jhaastha.github.io/calculator/"
-  },
-  { 
-    title: "netflix clone", 
-     
-    desc: "A netfix clone with use of APIs and basic html,css and js.",
-    
-  }
+/* Typing Animation */
+const texts = [
+  "Computer Science Student",
+  "Frontend Developer",
+  "Problem Solver",
+  "Aspiring Software Engineer"
 ];
 
-const projectsContainer = document.getElementById("projectsContainer");
-const modal = document.getElementById("modal");
-const modalTitle = document.getElementById("modalTitle");
-const modalDesc = document.getElementById("modalDesc");
-const modalLink = document.getElementById("modalLink");
-const closeModal = document.getElementById("closeModal");
+let textIndex = 0;
+let charIndex = 0;
+const typing = document.querySelector(".typing");
 
-// Display projects
-projects.forEach((project, index) => {
-  const card = document.createElement("div");
-  card.classList.add("project-card");
+function typeEffect() {
+  if (charIndex < texts[textIndex].length) {
+    typing.textContent += texts[textIndex].charAt(charIndex);
+    charIndex++;
+    setTimeout(typeEffect, 90);
+  } else {
+    setTimeout(eraseEffect, 1800);
+  }
+}
 
-  card.innerHTML = `
-    
-    <div class="project-info">
-      <h4>${project.title}</h4>
-      <p>${project.desc.slice(0, 50)}...</p>
-    </div>
-  `;
+function eraseEffect() {
+  if (charIndex > 0) {
+    typing.textContent = texts[textIndex].substring(0, charIndex - 1);
+    charIndex--;
+    setTimeout(eraseEffect, 60);
+  } else {
+    textIndex = (textIndex + 1) % texts.length;
+    setTimeout(typeEffect, 300);
+  }
+}
 
-  card.addEventListener("click", () => {
-    modal.style.display = "flex";
-    modalTitle.innerText = project.title;
-    modalDesc.innerText = project.desc;
-    modalLink.href = project.link;
+document.addEventListener("DOMContentLoaded", typeEffect);
+
+/* Scroll Reveal + Active Navbar */
+const sections = document.querySelectorAll("section");
+const navLinks = document.querySelectorAll(".nav-links a");
+
+window.addEventListener("scroll", () => {
+  let current = "";
+
+  sections.forEach(section => {
+    const sectionTop = section.offsetTop - 160;
+    if (scrollY >= sectionTop) {
+      current = section.getAttribute("id");
+    }
+
+    if (section.getBoundingClientRect().top < window.innerHeight - 120) {
+      section.style.opacity = 1;
+      section.style.transform = "translateY(0)";
+    }
   });
 
-  projectsContainer.appendChild(card);
-});
-
-// Close modal
-closeModal.addEventListener("click", () => {
-  modal.style.display = "none";
-});
-
-window.addEventListener("click", (e) => {
-  if(e.target == modal) modal.style.display = "none";
+  navLinks.forEach(link => {
+    link.classList.remove("active");
+    if (link.getAttribute("href") === "#" + current) {
+      link.classList.add("active");
+    }
+  });
 });

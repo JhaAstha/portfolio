@@ -2,80 +2,122 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Astha Jha Portfolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Astha Jha | Portfolio</title>
   <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <!-- Navbar -->
-  <header class="navbar">
-    <h1 class="logo">ASTHA JHA</h1>
-    <nav>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#about">About Me</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="logo">Astha</div>
+  <ul class="nav-links">
+    <li><a href="#home" class="active">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#learning">Learning</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
 
-  <!-- Banner -->
-  <section class="banner" id="banner">
-    <div class="banner-content">
-      <h2>Hi, I’m Astha!</h2>
-      <p>Frontend Developer | HTML | CSS | JavaScript | React</p>
-      <button onclick="document.getElementById('projects').scrollIntoView({behavior:'smooth'})">View Projects</button>
+<!-- HERO -->
+<section class="hero" id="home">
+  <img src="assets/profile.jpeg" alt="Astha Jha" class="profile-pic">
+
+  <h1 class="neon-name">Astha Jha</h1>
+  <p class="typing"></p>
+
+  <span class="subtitle">
+    B.Tech CSE • Second Year<br>
+    Amity University Jharkhand (2024–2028)
+  </span>
+</section>
+
+<!-- ABOUT -->
+<section class="section" id="about">
+  <h2>About Me</h2>
+  <p>
+    I am a Computer Science Engineering student with a strong interest in building
+    clean, meaningful, and visually appealing digital experiences.
+    I enjoy problem-solving, coding, and understanding how modern technologies work
+    behind the scenes.
+    <br><br>
+    I believe in consistency, discipline, and continuous improvement, and I aim to
+    grow into a skilled software engineer who creates impactful solutions.
+  </p>
+</section>
+
+<!-- SKILLS -->
+<section class="section dark" id="skills">
+  <h2>Skills</h2>
+  <div class="skills">
+    <span>HTML</span><span>CSS</span><span>JavaScript</span>
+    <span>C</span><span>C++</span><span>DSA</span>
+    <span>DBMS</span><span>Java</span><span>Python</span>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="section" id="projects">
+  <h2>Projects</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>AI Mood Detector Music Player</h3>
+      <p>
+        Intelligent music player that adapts playlists based on detected user mood,
+        focusing on logic design and user experience.
+      </p>
     </div>
-  </section>
 
-  <!-- Skills Section -->
-  <section class="skills" id="skills">
-    <h3>My Skills</h3>
-    <div class="skills-container">
-      <div class="skill">HTML</div>
-      <div class="skill">CSS</div>
-      <div class="skill">JavaScript</div>
-      <div class="skill">React</div>
-      <div class="skill">Git & GitHub</div>
-      <div class="skill">Responsive Design</div>
-      <div class="skill">UI/UX</div>
+    <div class="card">
+      <h3>Netflix Clone</h3>
+      <p>
+        Responsive Netflix UI clone built with reusable components and
+        optimized layouts for different screen sizes.
+      </p>
     </div>
-  </section>
 
-  <!-- Projects Section -->
-  <section class="projects" id="projects">
-    <h3>My Projects</h3>
-    <div class="projects-container" id="projectsContainer"></div>
-  </section>
-
-  <!-- Modal for project details -->
-  <div id="modal" class="modal">
-    <div class="modal-content">
-      <span id="closeModal">&times;</span>
-      <h3 id="modalTitle"></h3>
-      <p id="modalDesc"></p>
-      <a id="modalLink" href="#" target="_blank"><button>View Project</button></a>
+    <div class="card">
+      <h3>Scientific Calculator</h3>
+      <p>
+        Advanced calculator supporting complex mathematical operations
+        with a clean and intuitive interface.
+      </p>
     </div>
   </div>
+</section>
 
-  <!-- About Me -->
-  <section class="about" id="about">
-    <h3>About Me</h3>
-    <p>I am a BTech CSE student passionate about frontend development and building interactive web applications. I love creating modern, dark-themed UIs inspired by Netflix and other apps.</p>
-  </section>
+<!-- LEARNING -->
+<section class="section dark" id="learning">
+  <h2>Currently Learning</h2>
+  <p>
+    Advanced Data Structures & Algorithms, Frontend performance optimization,
+    and core backend development concepts.
+  </p>
+</section>
 
-  <!-- Contact -->
-  <section class="contact" id="contact">
-    <h3>Contact Me</h3>
-    <p>Email: asthajha520@gmail.com</p>
-    <p>LinkedIn:https://www.linkedin.com/in/astha-jha-110672363?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app </p>
-    <p>GitHub: https://github.com/JhaAstha</p>
-  </section>
+<!-- CONTACT -->
+<section class="section contact" id="contact">
+  <h2>Contact</h2>
+  <p>Email: asthajha520@gmail.com</p>
+  <p>GitHub: 
+  <a href="https://github.com/JhaAstha" target="_blank">
+    github.com/your-JhaAstha
+  </a>
+</p>
 
-  <footer>
-    <p>© 2026 Astha Jha • Portfolio Website</p>
-  </footer>
+<p>LinkedIn: 
+  <a href="https://www.linkedin.com/in/astha-jha-110672363?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+    linkedin.com/in/AsthaJha
+  </a>
+</p>
+</section>
 
-  <script src="script.js"></script>
+<footer>
+  © 2026 Astha Jha
+</footer>
+
 </body>
 </html>
