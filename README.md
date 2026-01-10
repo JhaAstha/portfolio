@@ -6,12 +6,31 @@ Features
 
 
  Dark Purple & Black Theme 
+
+ 
  About Me section
+
+ 
  Skills section (separate & structured)
+
+ 
  Projects section
+
+ 
 Clean project cards
+
+
 Click to open popup modal
+
+
 Project description shown (no redirection)
+
+
 Smooth hover & animation effects
+
+
  Fully responsive design
+
+
+ 
  Fast loading & simple structure
