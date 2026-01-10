@@ -4,7 +4,7 @@ This project showcases my skills, projects, and creativity with smooth UI intera
 
 
 
-Features:-
+Features :-
 
 
  Dark Purple & Black Theme 
