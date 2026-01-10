@@ -2,7 +2,9 @@ A modern, responsive personal portfolio website built using HTML, CSS, and JavaS
 This project showcases my skills, projects, and creativity with smooth UI interactions and popup effect
 
 
-Features
+
+
+Features:-
 
 
  Dark Purple & Black Theme 
