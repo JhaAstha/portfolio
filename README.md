@@ -36,3 +36,11 @@ Smooth hover & animation effects
 
  
  Fast loading & simple structure
+
+
+ Technologies Used
+HTML5 – Structure
+CSS3 – Styling, animations, layout
+JavaScript (Vanilla JS) – Interactivity & popups
+
+ 
