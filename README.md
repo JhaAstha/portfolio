@@ -40,7 +40,8 @@ Smooth hover & animation effects
 
 
 
- Technologies Used
+
+Technologies Used :-
 
  
 HTML5 – Structure
