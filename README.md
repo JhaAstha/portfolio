@@ -52,4 +52,18 @@ CSS3 – Styling, animations, layout
 
 JavaScript (Vanilla JS) – Interactivity & popups
 
+
+
+Future Enhancement:
+
+
+Direct link to project  
+
+
+Resume download section
+
+
+and much more interactive feature
+
+
  
