@@ -7,7 +7,7 @@ This project showcases my skills, projects, and creativity with smooth UI intera
 Features :-
 
 
- Dark Purple & Black Theme  with appealing visuals
+ Dark Purple & Black Theme  with appealing visuals 
 
  
  About Me section
